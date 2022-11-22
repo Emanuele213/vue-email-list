@@ -11,3 +11,16 @@ body {
     align-items: center;
     font-size: 2rem;
 }
+
+.table {
+    display: table;
+    border: 2px solid black;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+li {
+    border-bottom: 1px solid black;;
+}
