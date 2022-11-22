@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <!-- my-style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div>
+            <h1>Tutte le email</h1>
+            <ol v-if="arrEmail.length === 10">
+                <li v-for="email in arrEmail">
+                    {{ email }}
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+    <!-- my-script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
