@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
-    <!-- AXIOS -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
     <!-- my-style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="app">
-        <h1>Tutte le email</h1>
-        <div class="table">
-            <ol v-if="arrEmail.length === 10">
+        <h1>Premi il pulsante per generare altre emails</h1>
+        <button class="mod-btn" @click="showEmail()">Genera</button>
+        <div class="container">
+        <div class="table" v-if="arrEmail.length === 10">
+            <ol>
                 <li v-for="email in arrEmail">
                     {{ email }}
                 </li>
             </ol>
         </div>
+        </div>
     </div>
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
     <!-- my-script -->

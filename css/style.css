@@ -12,9 +12,33 @@ body {
     font-size: 2rem;
 }
 
+#app {
+    text-align: center;
+}
+
+.mod-btn {
+    margin: .8rem 0;
+    padding: 1rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: greenyellow;
+}
+
+.mod-btn:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
 .table {
     display: table;
     border: 2px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
